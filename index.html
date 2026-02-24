@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAEPA Concerts | Venta de Boletos</title>
+    <meta name="description"
+        content="Sitio oficial de CAEPA Concerts. Adquiere tus boletos para los mejores eventos de teatro y conciertos.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS List -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <!-- Se recomienda colocar aquí la etiqueta <img> con tu logo, temporalmente usamos texto estilizado -->
+                <span class="logo-icon">C</span>
+                <div class="logo-text">
+                    <strong>CAEPA</strong>
+                    <span>CONCERTS</span>
+                </div>
+            </a>
+
+            <nav class="nav-links">
+                <a href="#inicio">Inicio</a>
+                <a href="#cartelera">Cartelera</a>
+                <a href="#experiencia">Experiencia</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="#" class="btn btn-primary disabled" onclick="event.preventDefault()">Próximamente</a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="close-menu-btn" id="closeMenuBtn">
+            <i data-lucide="x"></i>
+        </button>
+        <nav class="mobile-nav-links">
+            <a href="#inicio">Inicio</a>
+            <a href="#cartelera">Cartelera</a>
+            <a href="#experiencia">Experiencia</a>
+            <a href="#contacto">Contacto</a>
+            <a href="#" class="btn btn-primary mobile-btn disabled" onclick="event.preventDefault()">Próximamente</a>
+        </nav>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="inicio" class="hero section-dark">
+            <div class="hero-bg-pattern"></div>
+            <div class="container hero-container">
+                <div class="hero-content fade-in-up">
+                    <span class="badge" style="background-color: #fef2f2; color: #dc2626; border: 1px solid #fca5a5;"><i
+                            data-lucide="hard-hat"
+                            style="width: 14px; height: 14px; vertical-align: middle; margin-bottom: 2px;"></i> Sitio en
+                        Construcción</span>
+                    <h1 class="hero-title">Vive la emoción del <span>Teatro y la Música</span></h1>
+                    <p class="hero-subtitle">Descubre las mejores obras y conciertos en un ambiente único. Reserva tu
+                        asiento en la primera fila de las emociones.</p>
+                    <div class="hero-buttons">
+                        <a href="#" class="btn btn-primary btn-lg disabled" onclick="event.preventDefault()">Comprar
+                            Boletos <i data-lucide="arrow-right"></i></a>
+                        <a href="#experiencia" class="btn btn-outline-light btn-lg">Conocer el Teatro</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Marquee / Ticker -->
+        <div class="marquee-container section-dark border-y">
+            <div class="marquee">
+                <span>PRÓXIMOS EVENTOS • OBRAS DE TEATRO • CONCIERTOS EN VIVO • STAND UP • </span>
+                <span>PRÓXIMOS EVENTOS • OBRAS DE TEATRO • CONCIERTOS EN VIVO • STAND UP • </span>
+            </div>
+        </div>
+
+        <!-- Cartelera / Events Section -->
+        <section id="cartelera" class="events section-light">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <h2 class="section-title">En Cartelera</h2>
+                    <p class="section-desc">No te pierdas de nuestros próximos eventos y asegura tu lugar.</p>
+                </div>
+
+                <div class="coming-soon-container fade-in-up">
+                    <div class="coming-soon-content">
+                        <i data-lucide="calendar-clock" class="coming-soon-icon"></i>
+                        <h3>Próximamente</h3>
+                        <p>Estamos preparando la mejor cartelera de la temporada. Vuelve pronto para descubrir nuestros
+                            nuevos eventos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experiencia Section -->
+        <section id="experiencia" class="experience section-dark">
+            <div class="container">
+                <div class="experience-grid">
+                    <div class="experience-content fade-in">
+                        <h2 class="section-title text-white">Más que entradas,<br><span class="text-accent">Una
+                                experiencia.</span></h2>
+                        <p class="experience-text">
+                            En CAEPA CONCERTS nos dedicamos a transformar tus noches en momentos inolvidables. Nuestras
+                            instalaciones están diseñadas con la mejor acústica y comodidad para que disfrutes de cada
+                            función.
+                        </p>
+                        <ul class="features-list">
+                            <li>
+                                <div class="feature-icon"><i data-lucide="speaker"></i></div>
+                                <div>
+                                    <h4>Acústica Premium</h4>
+                                    <p>Sonido envolvente en cada rincón del teatro.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="feature-icon"><i data-lucide="armchair"></i></div>
+                                <div>
+                                    <h4>Asientos de Lujo</h4>
+                                    <p>Tu comodidad garantizada para disfrutar el show.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="feature-icon"><i data-lucide="shield-check"></i></div>
+                                <div>
+                                    <h4>Compra Segura</h4>
+                                    <p>Sistema de boletaje con máxima seguridad.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="experience-image fade-in-up">
+                        <div class="premium-image-wrapper">
+                            <div class="img-placeholder luxury-ph"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter / CTA -->
+        <section class="cta-section section-light">
+            <div class="container">
+                <div class="cta-box fade-in-up">
+                    <div class="cta-content">
+                        <h2>¿Quieres enterarte primero?</h2>
+                        <p>Suscríbete para recibir noticias, preventas exclusivas y descuentos para nuestros próximos
+                            eventos.</p>
+                    </div>
+                    <form class="cta-form" onsubmit="event.preventDefault(); alert('¡Gracias por suscribirte!');">
+                        <div class="input-group">
+                            <input type="email" placeholder="Tu correo electrónico" disabled
+                                style="opacity: 0.6; cursor: not-allowed; background-color: var(--color-white-dim);">
+                            <button type="submit" class="btn btn-primary disabled"
+                                onclick="event.preventDefault()">Próximamente</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contacto" class="footer section-dark">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo text-white">
+                        <span class="logo-icon light">C</span>
+                        <div class="logo-text">
+                            <strong>CAEPA</strong>
+                            <span>CONCERTS</span>
+                        </div>
+                    </a>
+                    <p class="footer-desc">El espacio ideal donde el talento y el público se encuentran. Experiencias
+                        artísticas de primer nivel.</p>
+                    <div class="social-links">
+                        <a href="#"><i data-lucide="facebook"></i></a>
+                        <a href="#"><i data-lucide="instagram"></i></a>
+                        <a href="#"><i data-lucide="twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#cartelera">Cartelera de Eventos</a></li>
+                        <li><a href="#experiencia">Nuestras Salas</a></li>
+                        <li><a href="#">Preguntas Frecuentes</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#" class="disabled-link" onclick="event.preventDefault()">Términos y
+                                Condiciones</a></li>
+                        <li><a href="#" class="disabled-link" onclick="event.preventDefault()">Políticas de
+                                Privacidad</a></li>
+                        <li><a href="#" class="disabled-link" onclick="event.preventDefault()">Política de
+                                Reembolsos</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h3>Contacto</h3>
+                    <ul>
+                        <li><i data-lucide="map-pin"></i> ###</li>
+                        <li><i data-lucide="phone"></i> ###</li>
+                        <li><i data-lucide="mail"></i> ###</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 CAEPA Concerts. Todos los derechos reservados.</p>
+                <p>Sitio diseñado con orgullo.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
