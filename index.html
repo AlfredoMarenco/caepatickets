@@ -43,7 +43,7 @@
             </nav>
 
             <div class="nav-actions">
-                <a href="#" class="btn btn-primary disabled" onclick="event.preventDefault()">Próximamente</a>
+                <a href="#cartelera" class="btn btn-primary">Comprar Boletos</a>
                 <button class="mobile-menu-btn" id="mobileMenuBtn">
                     <i data-lucide="menu"></i>
                 </button>
@@ -61,7 +61,7 @@
             <a href="#cartelera">Cartelera</a>
             <a href="#experiencia">Experiencia</a>
             <a href="#contacto">Contacto</a>
-            <a href="#" class="btn btn-primary mobile-btn disabled" onclick="event.preventDefault()">Próximamente</a>
+            <a href="#cartelera" class="btn btn-primary mobile-btn">Comprar Boletos</a>
         </nav>
     </div>
 
@@ -71,15 +71,11 @@
             <div class="hero-bg-pattern"></div>
             <div class="container hero-container">
                 <div class="hero-content fade-in-up">
-                    <span class="badge" style="background-color: #fef2f2; color: #dc2626; border: 1px solid #fca5a5;"><i
-                            data-lucide="hard-hat"
-                            style="width: 14px; height: 14px; vertical-align: middle; margin-bottom: 2px;"></i> Sitio en
-                        Construcción</span>
                     <h1 class="hero-title">Vive la emoción del <span>Teatro y la Música</span></h1>
                     <p class="hero-subtitle">Descubre las mejores obras y conciertos en un ambiente único. Reserva tu
                         asiento en la primera fila de las emociones.</p>
                     <div class="hero-buttons">
-                        <a href="#" class="btn btn-primary btn-lg disabled" onclick="event.preventDefault()">Comprar
+                        <a href="#cartelera" class="btn btn-primary btn-lg">Comprar
                             Boletos <i data-lucide="arrow-right"></i></a>
                         <a href="#experiencia" class="btn btn-outline-light btn-lg">Conocer el Teatro</a>
                     </div>
@@ -128,9 +124,9 @@
                                 </div>
                             </div>
                             <div class="event-footer">
-                                <span class="event-price">Próximamente</span>
-                                <a href="#" class="btn btn-primary btn-sm disabled"
-                                    onclick="event.preventDefault()">Comprar Boletos</a>
+                                <span class="event-price">Boletos Disponibles</span>
+                                <a href="https://boletea.com.mx/ordertickets.asp?p=8603&src=eventperformances"
+                                    target="_blank" class="btn btn-primary btn-sm">Comprar Boletos</a>
                             </div>
                         </div>
                     </article>
@@ -194,10 +190,8 @@
                     </div>
                     <form class="cta-form" onsubmit="event.preventDefault(); alert('¡Gracias por suscribirte!');">
                         <div class="input-group">
-                            <input type="email" placeholder="Tu correo electrónico" disabled
-                                style="opacity: 0.6; cursor: not-allowed; background-color: var(--color-white-dim);">
-                            <button type="submit" class="btn btn-primary disabled"
-                                onclick="event.preventDefault()">Próximamente</button>
+                            <input type="email" placeholder="Tu correo electrónico" required>
+                            <button type="submit" class="btn btn-primary">Suscribirse</button>
                         </div>
                     </form>
                 </div>
@@ -239,11 +233,11 @@
                 <div class="footer-links">
                     <h3>Legal</h3>
                     <ul>
-                        <li><a href="#" class="disabled-link" onclick="event.preventDefault()">Términos y
+                        <li><a href="#">Términos y
                                 Condiciones</a></li>
-                        <li><a href="#" class="disabled-link" onclick="event.preventDefault()">Políticas de
+                        <li><a href="#">Políticas de
                                 Privacidad</a></li>
-                        <li><a href="#" class="disabled-link" onclick="event.preventDefault()">Política de
+                        <li><a href="#">Política de
                                 Reembolsos</a></li>
                     </ul>
                 </div>
