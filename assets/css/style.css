@@ -939,3 +939,217 @@ img {
     color: var(--color-gray-dark);
     font-size: 1.15rem;
 }
+/* 
+=====================================
+   Páginas Legales
+=====================================
+*/
+
+.legal-header {
+    padding: 10rem 0 5rem;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.legal-header .breadcrumb {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+    color: var(--color-gray);
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.legal-header .breadcrumb a:hover {
+    color: var(--color-white);
+}
+
+.legal-header h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-family: var(--font-serif);
+    font-weight: 700;
+}
+
+.legal-content-section {
+    padding: 5rem 0;
+    background-color: var(--color-white-dim);
+}
+
+.legal-card {
+    background-color: var(--color-white);
+    padding: 4rem;
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-lg);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.legal-body {
+    color: var(--color-black-light);
+    line-height: 1.8;
+}
+
+.legal-body h2 {
+    font-size: 1.75rem;
+    margin: 2.5rem 0 1rem;
+    color: var(--color-black);
+    border-bottom: 1px solid var(--color-gray-light);
+    padding-bottom: 0.5rem;
+}
+
+.legal-body h3 {
+    font-size: 1.25rem;
+    margin: 2rem 0 1rem;
+    color: var(--color-black);
+}
+
+.legal-body p {
+    margin-bottom: 1.5rem;
+}
+
+.legal-body ul {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+    list-style: disc;
+}
+
+.legal-body li {
+    margin-bottom: 0.5rem;
+}
+
+.last-updated {
+    display: block;
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--color-gray-light);
+    font-size: 0.9rem;
+    color: var(--color-gray-dark);
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .legal-card {
+        padding: 2rem 1.5rem;
+    }
+    
+    .legal-header {
+        padding: 8rem 0 4rem;
+    }
+}
+
+.experience-img {
+    width: 100%;
+    height: 100%;
+    min-height: 500px;
+    object-fit: cover;
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-xl);
+    transition: var(--transition);
+}
+
+.experience-img:hover {
+    transform: scale(1.02);
+}
+
+/* 
+=====================================
+   Premium Logo Display (Experience Section)
+=====================================
+*/
+
+.premium-logo-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+    background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0) 100%);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: var(--border-radius-lg);
+    backdrop-filter: blur(10px);
+    transition: var(--transition);
+}
+
+.premium-logo-display:hover {
+    border-color: rgba(255,255,255,0.3);
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.logo-big-icon {
+    font-size: 8rem;
+    font-weight: 800;
+    line-height: 1;
+    width: 150px;
+    height: 150px;
+    background: var(--color-white);
+    color: var(--color-black);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 30px rgba(255,255,255,0.2);
+}
+
+.logo-big-text {
+    text-align: center;
+    color: var(--color-white);
+}
+
+.logo-big-text strong {
+    display: block;
+    font-size: 3.5rem;
+    letter-spacing: 0.1em;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+.logo-big-text span {
+    font-size: 1.25rem;
+    letter-spacing: 0.3em;
+    color: var(--color-gray);
+    text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+    .logo-big-icon {
+        width: 100px;
+        height: 100px;
+        font-size: 5rem;
+    }
+    
+    .logo-big-text strong {
+        font-size: 2.5rem;
+    }
+}
+
+/* 
+=====================================
+   Sección Experiencia - Logo Style
+=====================================
+*/
+
+.logo-display-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+    background: radial-gradient(circle at center, rgba(255,255,255,0.05) 0%, transparent 70%);
+    border-radius: var(--border-radius-lg);
+    border: 1px dashed rgba(255,255,255,0.1);
+}
+
+.logo-display-center .logo {
+    transform: scale(2); /* Ajuste de escala para que no se vea tan pequeño como en el footer */
+    transition: var(--transition);
+}
+
+.logo-display-center:hover .logo {
+    transform: scale(2.1);
+}
